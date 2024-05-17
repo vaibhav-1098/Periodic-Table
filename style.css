@@ -1,0 +1,112 @@
+*{box-sizing: border-box; margin: 0; padding: 0;}
+
+td{padding: 5px 0;}
+
+.table{
+  border-collapse: collapse;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  font-family: system-ui, -apple-system;
+}
+
+table,marquee{font-family: system-ui, -apple-system;}
+
+.AN{color: steelblue; font-size: 10px;}
+.E{border: 1px solid black; font-size: 10px;}
+.period{color: crimson; font-size: 10px;}
+.num{color: seagreen; font-size: 10px; vertical-align: bottom;}
+
+.E:hover{
+  cursor: pointer;
+  background-color: crimson;
+}
+
+.period{width: 5px;}
+
+.circle{
+  height: 20px;
+  border-radius: 3px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.names{
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+}
+
+.naming{
+  margin: auto;
+  width: 320px;
+  font-size: 11px;
+}
+
+table.naming td,
+table.naming tr {
+  border: 2px solid white;
+}
+
+table.naming td{border-radius: 7px;}
+
+/* catergorising */
+.AM{background-color: #afeeee; box-shadow: 0 0 5px #008b8b inset;}
+.AEM{background-color: #87ceeb; box-shadow: 0 0 5px #0077a7 inset;}
+.H{background-color: #dda0dd; box-shadow: 0 0 5px #a50ea5 inset;}
+.NG{background-color: #d87093bd; box-shadow: 0 0 5px #940535 inset;}
+.LA{background-color: #98fb98; box-shadow: 0 0 5px #009600 inset;}
+.AC{background-color: #acff2fa4; box-shadow: 0 0 5px #508500 inset;}
+.TM{background-color: #fff583; box-shadow: 0 0 5px #c5b500 inset;}
+.NM{background-color: #a0512d7e; box-shadow: 0 0 5px #993000 inset;}
+.SM{background-color: #ffa600b4; box-shadow: 0 0 5px #7e1300 inset;}
+.BM{background-color: #00ffffc4; box-shadow: 0 0 5px #001369c4 inset;}
+.UP{background-color: #cacaca; box-shadow: 0 0 5px #424242 inset;}
+
+h1{line-height: 25px;}
+
+#popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+}
+
+#popup-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  font-family: system-ui, -apple-system;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.hidden {display: none;}
+
+#close-popup{
+  float: right;
+  background-color: #ca0000e3;
+  color: white;
+  border: none;
+  padding: 5px;
+  padding-bottom: 0;
+  padding-top: 3px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+h1 span{font-size: 1.5rem;}
+
+@media screen and (width>=650px) {
+  .E{font-size: 18px;}
+  .AN,.period,.num{font-size: 15px;}
+  .naming tr td div{font-size: 15px;}
+  h1{font-size: 3rem; line-height: 35px;}
+  h1 span{font-size: 2.2rem;}
+  marquee{font-size: 20px; }
+}
